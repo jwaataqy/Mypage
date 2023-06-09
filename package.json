@@ -1,0 +1,15 @@
+{
+  "name": "uts_tail_rajwaa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tail": "npx tailwindcss -i ./input.css -o ./src/css/page.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
