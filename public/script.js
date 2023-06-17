@@ -27,7 +27,7 @@ function menu() {
         document.getElementById('header').classList.add
             ('shadow-lg');
     } else {
-        document.getElementById('header').classList.remove('bg-white');
+        document.getElementById('header').classList.add('bg-white');
         document.getElementById('header').classList.remove('shadow-lg')
     }
 }
