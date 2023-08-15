@@ -42,9 +42,6 @@ function projects() {
     document.getElementById('skill').classList.add('hidden');
     document.getElementById('projects').classList.remove('hidden');
     document.getElementById('projects').classList.add('flex');
-    
-
-
 }
 
 function skill() {
@@ -52,4 +49,18 @@ function skill() {
     document.getElementById('projects').classList.add('hidden');
     document.getElementById('skill').classList.remove('hidden');
     document.getElementById('skill').classList.add('flex');
+}
+
+function icon() {
+    document.getElementById('icon-1').classList.remove('flex');
+    document.getElementById('icon-1').classList.add('hidden');
+    document.getElementById('icon-2').classList.remove('hidden');
+    document.getElementById('icon-2').classList.add('flex');
+}
+
+function icon2(){
+    document.getElementById('icon-1').classList.remove('hidden');
+    document.getElementById('icon-1').classList.add('flex');
+    document.getElementById('icon-2').classList.remove('flex');
+    document.getElementById('icon-2').classList.add('hidden');
 }
