@@ -27,14 +27,19 @@
           <nav>
             <div class="block md:hidden" onclick="showHideMenu()">
               <i class="fas fa-bars text-xl" id="icon-1" onclick="icon()"></i>
-              <iconify-icon icon="iconoir:cancel" class="text-3xl hidden" id="icon-2" onclick="icon2()"></iconify-icon>
+              <iconify-icon
+                icon="iconoir:cancel"
+                class="text-3xl hidden"
+                id="icon-2"
+                onclick="icon2()"
+              ></iconify-icon>
             </div>
             <ul class="hidden md:flex gap-8">
               <li><a href="#" class="text-xl font-medium">About</a></li>
-              <li><a href="#" class="text-xl font-medium">Contact</a></li>
               <li>
-                <a href="#Projects" class="text-xl font-medium">Projects</a>
+                <a href="#projects" class="text-xl font-medium">Projects</a>
               </li>
+              <li><a href="#footer" class="text-xl font-medium">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -56,12 +61,65 @@
 
     <main class="my-20">
       <!-- Bagian I -->
-      <section
-        class="bg-[url('https://plus.unsplash.com/premium_photo-1686515847297-8f25e451fe9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60')] h-auto py-8"
-      >
+
+      <section>
+        <div class="flex justify-center mx-auto bg-slate-500 py-12">
+          <div class="flex gap-12">
+            <span class="mt-4">
+              <svg
+                class="text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"
+                />
+              </svg>
+            </span>
+            <div class="flex flex-col">
+              <h1 class="text-center text-white text-lg font-bold py-6">
+                <a class="text-xl font-semibold">Jwaataqy</a><br />I'm Junior
+                Programmer
+              </h1>
+
+              <span class="flex items-start gap-14">
+                <a href="https://www.instagram.com/fucek.mqn">
+                  <iconify-icon
+                    icon="skill-icons:instagram"
+                    style="color: green"
+                    width="30"
+                    height="30"
+                  ></iconify-icon>
+                </a>
+                <a href="mailto:muhammadrajwaataqiy@gmail.com">
+                  <iconify-icon
+                    icon="logos:google-gmail"
+                    style="color: green"
+                    width="30"
+                    height="30"
+                  ></iconify-icon>
+                </a>
+                <a href="#">
+                  <iconify-icon
+                    icon="bi:telephone-fill"
+                    style="color: white"
+                    width="30"
+                    height="30"
+                  ></iconify-icon>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="">
         <div class="flex flex-col items-center justify-center">
           <svg
-            class="text-white"
+            class="text-black"
             xmlns="http://www.w3.org/2000/svg"
             width="60"
             height="60"
@@ -72,7 +130,7 @@
               d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"
             />
           </svg>
-          <h1 class="text-center text-white text-lg font-bold py-6">
+          <h1 class="text-center text-black text-lg font-bold py-6">
             <a class="text-xl font-semibold">Jwaataqy</a><br />I'm Junior
             Programmer
           </h1>
@@ -99,15 +157,16 @@
             <a href="#">
               <iconify-icon
                 icon="bi:telephone-fill"
-                style="color: white"
+                style="color: black"
                 width="30"
                 height="30"
               ></iconify-icon>
             </a>
           </div>
         </section>
-      </section>
+      </section> -->
 
+      <!-- Button skill and projects
       <section class="my-12">
         <div
           class="bg-zinc-700 w-[300px] flex items-center justify-center mx-auto rounded-full shadow-xl"
@@ -125,6 +184,54 @@
             >
               Projects
             </button>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Bagian II Baru (My profile) -->
+
+      <section id="profile" class="my-6">
+        <div class="text-center flex flex-col justify-center items-center">
+          <h2 class="text-2xl font-medium">My Profile</h2>
+          <div
+            class="bg-slate-100 shadow-slate-600 md:w-[420px] w-[300px] h-auto rounded-md px-4 py-4 my-7"
+          >
+            <p>
+              Nama Lengkap Saya Adalah muhammad Rajwaa, saya adalah seorang
+              siswa dari
+              <a href="#" class="font-semibold">SMK MadinatulQuran</a> Dengan
+              jurusan Rekayasa Perangkat Lunak(RPL)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bagian III Baru (My Skill) -->
+
+      <section>
+        <div class="text-center flex flex-col justify-center items-center">
+          <h1 class="text-2xl font-medium">My Skill</h1>
+          <div class="flex flex-row gap-12 my-8">
+            <div
+              class="bg-slate-100 shadow-slate-600 md:w-[200px] w-[100px] h-auto rounded-md px-4 py-4"
+            >
+              <p>Mobile Development</p>
+            </div>
+            <div
+              class="bg-slate-100 shadow-slate-600 md:w-[200px] w-[100px] h-auto rounded-md px-4 py-4"
+            >
+              <p>Web Development</p>
+            </div>
+            <div
+              class="bg-slate-100 shadow-slate-600 md:w-[200px] w-[100px] h-auto rounded-md px-4 py-4"
+            >
+              <p>UI Designer</p>
+            </div>
+            <div
+              class="bg-slate-100 shadow-slate-600 md:w-[200px] w-[100px] h-auto rounded-md px-4 py-4"
+            >
+              <p>Database</p>
+            </div>
           </div>
         </div>
       </section>
@@ -198,13 +305,27 @@
         </section>
       </section>
 
-      <!-- Bagian III -->
+      <!-- Bagian IV Baru (My experience) -->
 
       <section>
+        <div class="flex flex-col items-center">
+          <h2 class="text-2xl font-medium">My Experience</h2>
+          <span class="my-6 flex gap-4">
+            <li>English Camp | 2 mounths | English's Villagge</li>
+            <li>Tahfidz Camp | 1 mouth | Baitul Quran Wonogiri</li>
+            <li>head of the school cleaning division | 2023/2024</li>
+          </span>
+        </div>
+      </section>
+
+      <!-- Bagian III -->
+
+      <!-- <section>
         <section id="skill" class="hidden items-center justify-center flex-col">
           <div class="my-16">
             <h2 class="text-2xl font-medium">My Skill</h2>
           </div>
+
           <div
             class="bg-slate-100 shadow-slate-600 md:w-[420px] w-[300px] h-auto rounded-md px-4"
             data-aos="fade-right"
@@ -234,7 +355,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="py-2">
             <div
               class="bg-slate-100 shadow-slate-600 md:w-[420px] w-[300px] h-auto rounded-md px-4"
@@ -266,7 +387,6 @@
               </div>
             </div>
           </div>
-
 
           <div class="py-2">
             <div
@@ -300,10 +420,10 @@
             </div>
           </div>
         </section>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="bg-slate-900 w-full h-auto text-white">
+    <footer id="footer" class="bg-slate-900 w-full h-auto text-white">
       <h1 class="px-12 py-8 text-3xl text-center">Mypage-jwaataqy</h1>
       <div class="flex flex-wrap items-center justify-center px-8">
         <span class="flex items-center gap-4 px-8 py-8">

@@ -6,6 +6,9 @@ module.exports = {
       fontFamily:{
         "Quicksand": ["Quicksand",'san-serif']
       },
+      backgroundImage:{
+        'background': "url('/asset/img/bg.jpg')",
+      },
     },
   },
   plugins: [],
