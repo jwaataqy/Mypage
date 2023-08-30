@@ -21,17 +21,16 @@ window.onscroll = function () { menu() };
 var xstatus = false;
 
 function menu() {
-    if (document.documentElement.scrollTop > 20) {
+    if (document.documentElement.scrollTop > 10) {
         document.getElementById('header').classList.add
             ('bg-white');
         document.getElementById('header').classList.add
             ('shadow-lg');
     } else {
         document.getElementById('header').classList.add('bg-white');
-        document.getElementById('header').classList.remove('shadow-lg')
+        document.getElementById('header').classList.add('shadow-lg')
     }
 }
-
 
 function goClick() {
     window.location.href = "/public/home.html"

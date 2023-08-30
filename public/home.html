@@ -43,19 +43,35 @@
             </ul>
           </nav>
         </div>
-        <div
+
+        <!-- <div
           class="hidden flex-col gap-4 md:hidden px-3 py-3 my-8 bg-slate-500 rounded-sm"
-          id="daftarMenu"
+          id="daftarMenu"onclick = "menuClick()"
         >
           <a href="#" class="text-xl font-semibold border-b-2 border-gray-400"
-            >Home</a
+            >About</a
           >
           <a
             href="#projects"
             class="text-xl font-semibold border-b-2 border-gray-400"
-            >About</a
+            >Projects</a
           >
-        </div>
+          <a
+            href="#projects"
+            class="text-xl font-semibold border-b-2 border-gray-400"
+            >Contact</a
+          >
+        </div> -->
+      </div>
+      <div
+        id="daftarMenu"
+        class="flex md:hidden bg-white w-auto py-4 px-14 rounded-md absolute top-16 left-[47%]"
+      >
+        <ul class="flex flex-col gap-3">
+          <a href=""><li>About</li></a>
+          <a href="#projects"><li>Project</li></a>
+          <a href="#footer"><li>Contact</li></a>
+        </ul>
       </div>
     </header>
 
@@ -63,9 +79,9 @@
       <!-- Bagian I -->
 
       <section>
-        <div class="flex justify-center mx-auto bg-slate-500 py-12">
-          <div class="flex gap-12">
-            <span class="mt-4">
+        <div class="md:flex justify-center bg-slate-500 py-12 w-full">
+          <div class="md:flex flex-col gap-1">
+            <span class="flex items-center justify-center">
               <svg
                 class="text-white"
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,13 +95,13 @@
                 />
               </svg>
             </span>
-            <div class="flex flex-col">
+            <div class="">
               <h1 class="text-center text-white text-lg font-bold py-6">
                 <a class="text-xl font-semibold">Jwaataqy</a><br />I'm Junior
                 Programmer
               </h1>
 
-              <span class="flex items-start gap-14">
+              <span class="flex justify-center items-center gap-14 pt-8">
                 <a href="https://www.instagram.com/fucek.mqn">
                   <iconify-icon
                     icon="skill-icons:instagram"
@@ -115,79 +131,6 @@
           </div>
         </div>
       </section>
-
-      <!-- <section class="">
-        <div class="flex flex-col items-center justify-center">
-          <svg
-            class="text-black"
-            xmlns="http://www.w3.org/2000/svg"
-            width="60"
-            height="60"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="currentColor"
-              d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"
-            />
-          </svg>
-          <h1 class="text-center text-black text-lg font-bold py-6">
-            <a class="text-xl font-semibold">Jwaataqy</a><br />I'm Junior
-            Programmer
-          </h1>
-        </div>
-
-        <section>
-          <div class="flex items-center justify-center gap-8">
-            <a href="https://www.instagram.com/fucek.mqn">
-              <iconify-icon
-                icon="skill-icons:instagram"
-                style="color: green"
-                width="30"
-                height="30"
-              ></iconify-icon>
-            </a>
-            <a href="mailto:muhammadrajwaataqiy@gmail.com">
-              <iconify-icon
-                icon="logos:google-gmail"
-                style="color: green"
-                width="30"
-                height="30"
-              ></iconify-icon>
-            </a>
-            <a href="#">
-              <iconify-icon
-                icon="bi:telephone-fill"
-                style="color: black"
-                width="30"
-                height="30"
-              ></iconify-icon>
-            </a>
-          </div>
-        </section>
-      </section> -->
-
-      <!-- Button skill and projects
-      <section class="my-12">
-        <div
-          class="bg-zinc-700 w-[300px] flex items-center justify-center mx-auto rounded-full shadow-xl"
-        >
-          <div class="flex items-center gap-8 py-2">
-            <button
-              class="bg-transparent text-white hover:bg-white transition duration-100 hover:text-black w-20 h-8 rounded-full"
-              onclick="skill()"
-            >
-              Skill
-            </button>
-            <button
-              class="bg-transparent text-white hover:bg-white transition duration-100 hover:text-black w-28 h-8 rounded-full"
-              onclick="projects()"
-            >
-              Projects
-            </button>
-          </div>
-        </div>
-      </section> -->
-
       <!-- Bagian II Baru (My profile) -->
 
       <section id="profile" class="my-6">
@@ -209,26 +152,32 @@
       <!-- Bagian III Baru (My Skill) -->
 
       <section>
-        <div class="text-center flex flex-col justify-center items-center">
+        <div
+          class="text-center md:flex md:flex-wrap flex flex-col justify-center items-center"
+        >
           <h1 class="text-2xl font-medium">My Skill</h1>
-          <div class="flex flex-row gap-12 my-8">
+          <div class="flex md:flex-row flex-col gap-12 my-8">
             <div
-              class="bg-slate-100 shadow-slate-600 md:w-[200px] w-[100px] h-auto rounded-md px-4 py-4"
+              class="bg-slate-100 shadow-slate-600 md:w-[200px] w-[200px] h-auto rounded-md px-4 py-4"
+              data-aos="fade-right"
             >
               <p>Mobile Development</p>
             </div>
             <div
-              class="bg-slate-100 shadow-slate-600 md:w-[200px] w-[100px] h-auto rounded-md px-4 py-4"
+              class="bg-slate-100 shadow-slate-600 md:w-[200px] w-[200px] h-auto rounded-md px-4 py-4"
+              data-aos="fade-right"
             >
               <p>Web Development</p>
             </div>
             <div
-              class="bg-slate-100 shadow-slate-600 md:w-[200px] w-[100px] h-auto rounded-md px-4 py-4"
+              class="bg-slate-100 shadow-slate-600 md:w-[200px] w-[200px] h-auto rounded-md px-4 py-4"
+              data-aos="fade-left"
             >
               <p>UI Designer</p>
             </div>
             <div
-              class="bg-slate-100 shadow-slate-600 md:w-[200px] w-[100px] h-auto rounded-md px-4 py-4"
+              class="bg-slate-100 shadow-slate-600 md:w-[200px] w-[200px] h-auto rounded-md px-4 py-4"
+              data-aos="fade-left"
             >
               <p>Database</p>
             </div>
@@ -236,7 +185,8 @@
         </div>
       </section>
 
-      <!-- Bagian II -->
+      <!-- Bagian II Baru(My Projects)-->
+
       <section>
         <section
           id="projects"
@@ -251,7 +201,7 @@
           >
             <div class="flex items-center gap-2 py-4 px-4">
               <img
-                src="https://lopercourse.com/assets/img/icon.png"
+                src="https://lopercourse.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon.2a2d5cc8.png&w=256&q=75"
                 alt=""
                 class="w-8"
               />
@@ -310,117 +260,19 @@
       <section>
         <div class="flex flex-col items-center">
           <h2 class="text-2xl font-medium">My Experience</h2>
-          <span class="my-6 flex gap-4">
-            <li>English Camp | 2 mounths | English's Villagge</li>
-            <li>Tahfidz Camp | 1 mouth | Baitul Quran Wonogiri</li>
-            <li>head of the school cleaning division | 2023/2024</li>
+          <span class="my-6 md:flex flex-col text-center gap-8 md:gap-4">
+            <li data-aos="fade-right">
+              English Camp | 2 mounths | English's Villagge
+            </li>
+            <li data-aos="fade-left">
+              Tahfidz Camp | 1 mouth | Baitul Quran Wonogiri
+            </li>
+            <li data-aos="fade-right">
+              head of the school cleaning division | 2023/2024
+            </li>
           </span>
         </div>
       </section>
-
-      <!-- Bagian III -->
-
-      <!-- <section>
-        <section id="skill" class="hidden items-center justify-center flex-col">
-          <div class="my-16">
-            <h2 class="text-2xl font-medium">My Skill</h2>
-          </div>
-
-          <div
-            class="bg-slate-100 shadow-slate-600 md:w-[420px] w-[300px] h-auto rounded-md px-4"
-            data-aos="fade-right"
-          >
-            <div class="flex flex-col items-center gap-2 py-4 px-4">
-              <img
-                src="https://th.bing.com/th?q=Flutter+Logo+Vector&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-ID&cc=ID&setlang=en&adlt=strict&t=1&mw=247"
-                alt=""
-                class="w-8 rounded-full"
-              />
-              <h2 class="font-bold">Mobile Development</h2>
-            </div>
-          </div>
-
-          <div class="py-2">
-            <div
-              class="bg-slate-100 shadow-slate-600 md:w-[420px] w-[300px] h-auto rounded-md px-4"
-              data-aos="fade-left"
-            >
-              <div class="flex flex-col items-center gap-4 py-4 px-4">
-                <img
-                  src="https://th.bing.com/th?id=OIP.Qg1dxXsnfT47nyyKgeFWZwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
-                  alt=""
-                  class="w-9"
-                />
-                <h2 class="font-bold">Web Development</h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="py-2">
-            <div
-              class="bg-slate-100 shadow-slate-600 md:w-[420px] w-[300px] h-auto rounded-md px-4"
-              data-aos="fade-left"
-            >
-              <div class="flex flex-col items-center gap-4 py-4 px-4">
-                <img
-                  src="https://th.bing.com/th?id=OIP.V-SzHNtdymYn417tAh3KogHaJI&w=225&h=277&c=8&rs=1&qlt=30&o=6&dpr=1.3&pid=3.1&rm=2"
-                  alt=""
-                  class="w-9"
-                />
-                <h2 class="font-bold">Database</h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="py-2">
-            <div
-              class="bg-slate-100 shadow-slate-600 md:w-[420px] w-[300px] h-auto rounded-md px-4"
-              data-aos="fade-left"
-            >
-              <div class="flex flex-col items-center gap-4 py-4 px-4">
-                <img
-                  src="https://th.bing.com/th/id/R.f81a6f373c244b1f70f4b7402b5ab372?rik=rbXh4ieLuKt%2bmA&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f09%2fReact_logo_logotype_emblem.png&ehk=QhGOkKcUKCU7FBQgHOajOiJqJBACUTD2Ni6LsfqzCEA%3d&risl=&pid=ImgRaw&r=0"
-                  alt=""
-                  class="w-9"
-                />
-                <h2 class="font-bold">React.js</h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="py-2">
-            <div
-              class="bg-slate-100 shadow-slate-600 md:w-[420px] w-[300px] h-auto rounded-md px-4"
-              data-aos="fade-right"
-            >
-              <div class="flex flex-col items-center gap-4 py-4 px-4">
-                <img
-                  src="https://th.bing.com/th?id=OIP.at2zqcKmCqRWfvnKGol17AHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
-                  alt=""
-                  class="w-9 rounded-full"
-                />
-                <h2 class="font-bold">UI Designer</h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="py-2">
-            <div
-              class="bg-slate-100 shadow-slate-600 md:w-[420px] w-[300px] h-auto rounded-md px-4"
-              data-aos="fade-left"
-            >
-              <div class="flex flex-col items-center gap-4 py-4 px-4">
-                <img
-                  src="https://img.freepik.com/free-vector/vector-isolated-realistic-soccer-ball-white_1284-41932.jpg?w=740&t=st=1686293664~exp=1686294264~hmac=b088d48e2e8bdd0af2eab21210f4a05bd5180e6d5bc4a9152cb7b41fed0cffe4"
-                  alt=""
-                  class="w-9 rounded-full"
-                />
-                <h2 class="font-bold">Football</h2>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section> -->
     </main>
 
     <footer id="footer" class="bg-slate-900 w-full h-auto text-white">
